@@ -1,5 +1,5 @@
 # Cloud Check - Weather App
----
+
 ## Project Overview
 
 **Cloud Check** is a responsive weather app that displays real-time weather information for the user's current location and any city they search for. The app uses the OpenWeatherMap API to fetch weather data and displays it in a user-friendly interface with dynamic weather icons and descriptions.
