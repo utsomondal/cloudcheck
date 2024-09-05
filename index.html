@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/weather-app.png" alt="Weather App Logo" id="logo">
+        <h1>Cloud Check</h1>
+    </header>
+    <div class="container">
+        <div class="weather-card" id="currentWeatherCard">
+            <h2>Your Current Location</h2>
+            <p id="currentLocationName">📌Allow Your Location</p>
+            <div id="loadingCurrent" class="loading-spinner" style="display: none;"></div>
+            <div id="currentWeatherDetails" style="display: none;">
+                <img id="currentWeatherIcon" src="images/default.png" alt="Weather Icon">
+                <p id="currentTemperature">Temperature: --°C</p>
+                <p id="currentDescription">Description: --</p>
+                <p id="currentHumidity">Humidity: --%</p>
+                <p id="currentWind">Wind Speed: -- m/s</p>
+            </div>
+        </div>
+
+        <div class="weather-card" id="searchedWeatherCard">
+            <h2>Enter City Name</h2>
+            <input type="text" id="searchInput" placeholder="Enter city" aria-label="City Name">
+            <button id="searchButton" aria-label="Get weather for entered city">Get Weather</button>
+            <p id="errorMessage" style="display:none; color: red;">City not found or unable to retrieve data</p>
+            <div id="loadingSearched" class="loading-spinner" style="display: none;"></div>
+            <div id="searchedWeatherDetails" style="display: none;">
+                <img id="searchedWeatherIcon" src="images/default.png" alt="Weather Icon">
+                <p id="searchedTemperature">Temperature: --°C</p>
+                <p id="searchedDescription">Description: --</p>
+                <p id="searchedHumidity">Humidity: --%</p>
+                <p id="searchedWind">Wind Speed: -- m/s</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
